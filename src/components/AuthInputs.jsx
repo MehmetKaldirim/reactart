@@ -79,8 +79,11 @@ export default function AuthInputs() {
   }
 
   return (
-    <div id="auth-inputs">
-      <ControlContainer>
+    <div
+      id="auth-inputs"
+      className="w-full max-w-sm p-8 mx-auto rounded shadow-md bg-gradient-to-b from-stone-700 to-stone-800"
+    >
+      <div className="flex flex-col gap-2 mb-6">
         <p>
           <label className={labelClassesEmail}>Email</label>
           <input
@@ -99,16 +102,16 @@ export default function AuthInputs() {
             }
           />
         </p>
-      </ControlContainer>
-      <div className="actions">
+      </div>
+      <div className="flex justify-end gap-4 ">
         <button
           type="button"
-          className="px-4 py-2 font-semibold uppercase rounded text-stone-900 bg-amber-400 hover:bg-amber-500"
+          className="px-2 py-2 font-semibold uppercase rounded text-stone-500 bg-amber-200 hover:bg-amber-500"
         >
           Create a new account
         </button>
         <button
-          className="px-4 py-2 font-semibold uppercase rounded text-stone-900 bg-amber-400 hover:bg-amber-500"
+          className="px-2 py-2 font-semibold uppercase rounded text-stone-500 bg-amber-200 hover:bg-amber-500"
           onClick={handleLogin}
         >
           Sign In
